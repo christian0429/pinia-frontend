@@ -1,0 +1,12 @@
+{
+  "name": "0514-es62-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basic-q-.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
