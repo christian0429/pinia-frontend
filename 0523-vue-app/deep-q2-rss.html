@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>03-21</title>
+</head>
+<body>
+<div id="app">
+    <h2>JSON access Print</h2>
+    <ul>
+        <li v-for="(item, index) in feedItems" :key="index">
+           <p>{{ item.id }}</p>
+            <p>{{ item.body }}</p>
+            <p>{{ item.email }}</p>
+            <p>{{ item.name }}</p>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+<script>
+    var vm = Vue.createApp({
+        name: "App",
+        data() {
+            return {
+                feedItems: []
+            };
+        },
+        mounted() {
+            this.fetchData();
+        },
+        methods: {
+            fetchData() {
+                fetch('https://jsonplaceholder.typicode.com/comments')
+                    .then(response => response.json())
+                   // .then(json => console.log(json))
+                    .then(data => {
+                        this.feedItems = data;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                    });
+            }
+        }
+    }).mount("#app");
+</script>
+</body>
+</html>
