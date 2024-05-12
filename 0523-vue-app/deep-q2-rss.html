@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>03-21</title>
+</head>
+<body>
+<div id="app">
+    <h2>한국경제 RSS 피드</h2>
+    <ul>
+        <li v-for="(item, index) in feedItems" :key="index">
+            <a :href="item.link" target="_blank">{{ item.title }}</a>
+            <p>{{ item.pubDate }}</p>
+            <p>{{ item.description }}</p>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+<script>
+    var vm = Vue.createApp({
+        name: "App",
+        data() {
+            return {
+                feedItems: []
+            };
+        },
+        mounted() {
+            this.fetchData();
+        },
+        methods: {
+            fetchData() {
+                fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.hankyung.com%2Ffeed%2Fit&api_key=rooa9cfdnkctmsnpiftxnozlzfyaunxvudzwajoqe')
+                    .then(response => response.json())
+                    .then(data => {
+                        this.feedItems = data.items;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                    });
+            }
+        }
+    }).mount("#app");
+</script>
+</body>
+</html>

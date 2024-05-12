@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "feed": {
+    "url": "https://www.hankyung.com/feed/it",
+    "title": "한국경제 | 뉴스 | IT·과학",
+    "link": "https://www.hankyung.com/it/",
+    "author": "",
+    "description": "한경닷컴 RSS 서비스",
+    "image": ""
+  },
+  "items": [
+    {
+      "title": "라인 넘기든 지키든…네이버, 협상따라 해외전략 수정 불가피",
+      "pubDate": "2024-05-12 09:56:18",
+      "link": "https://www.hankyung.com/article/2024051239981",
+      "guid": "294700409c00a7f55caf96ba0e997e76",
+      "author": "이승우",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "리메드 \"알츠하이머 전자약 시대 열겠다\"",
+      "pubDate": "2024-05-12 09:44:48",
+      "link": "https://www.hankyung.com/article/2024051239511",
+      "guid": "2081d759e0e599104b7ec22c56a0f9dd",
+      "author": "오현아",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "초·중·고교생 위한 AICE 시험, 25일 시행",
+      "pubDate": "2024-05-12 09:41:47",
+      "link": "https://www.hankyung.com/article/2024051239631",
+      "guid": "a7b89ce6e24d8c526ff2607c3de4712b",
+      "author": "황동진",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "[포토] 민주당, '라인 사태 관련 공동 기자회견'",
+      "pubDate": "2024-05-12 09:12:09",
+      "link": "https://www.hankyung.com/article/202405123947i",
+      "guid": "ce6c4057bca1a1de7ce52d581a359590",
+      "author": "최혁",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "조주완 LG전자 사장 \"AI 인재, 사장 연봉보다 더 줘서라도 영입\"",
+      "pubDate": "2024-05-12 09:10:37",
+      "link": "https://www.hankyung.com/article/2024051239451",
+      "guid": "baf9eedfbce7cbb694b3b36f6dfc239d",
+      "author": "최진석",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "\"내년 SW공급망 절반 해킹 위험\"…정부, 기업 위한 가이드라인 마련",
+      "pubDate": "2024-05-12 09:10:09",
+      "link": "https://www.hankyung.com/article/2024051239431",
+      "guid": "1202ab91d889c8b4efdd979a0039e8ba",
+      "author": "이승우",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "[포토] KT, 사내 코딩대회 개최",
+      "pubDate": "2024-05-12 09:09:52",
+      "link": "https://www.hankyung.com/article/2024051239421",
+      "guid": "cc3918dcda58be268190ca20ed325b09",
+      "author": "이인혁",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "LG유플, 중고폰 데이터 무료로 삭제",
+      "pubDate": "2024-05-12 09:09:20",
+      "link": "https://www.hankyung.com/article/2024051239411",
+      "guid": "a507685475943e432746c65a2ee9ca56",
+      "author": "이승우",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "SKB, 남원 춘향제 지원…디지털 안내 서비스 제공",
+      "pubDate": "2024-05-12 09:08:52",
+      "link": "https://www.hankyung.com/article/2024051239401",
+      "guid": "346cfb152bbf5e0b0e64dbef23f5bf23",
+      "author": "이승우",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    },
+    {
+      "title": "HLB파나진, 면역진단기업 인수",
+      "pubDate": "2024-05-12 05:40:22",
+      "link": "https://www.hankyung.com/article/202405123643i",
+      "guid": "6350f28831301a1d131a5a4b02f185a3",
+      "author": "이영애",
+      "thumbnail": "",
+      "description": "",
+      "content": "",
+      "enclosure": {},
+      "categories": []
+    }
+  ]
+}
