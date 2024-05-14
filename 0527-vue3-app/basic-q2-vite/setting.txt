@@ -1,0 +1,34 @@
+administrator@MacBook-Pro 0527-vue3-app % npm init vite basic-q2-vite
+Need to install the following packages:
+create-vite@5.2.3
+Ok to proceed? (y) y
+✔ Select a framework: › Vue
+✔ Select a variant: › JavaScript
+
+Scaffolding project in /Users/administrator/Downloads/myNode 4-2/0527-vue3-app/basic-q2-vite...
+
+Done. Now run:
+
+  cd basic-q2-vite
+  npm install
+  npm run dev
+
+administrator@MacBook-Pro 0527-vue3-app % cd basic-q2-vite
+administrator@MacBook-Pro basic-q2-vite % npm install
+
+added 27 packages, and audited 28 packages in 5s
+
+4 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+administrator@MacBook-Pro basic-q2-vite % npm run dev
+
+> basic-q2-vite@0.0.0 dev
+> vite
+
+----------------------------------
+  VITE v5.2.11  ready in 296 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
