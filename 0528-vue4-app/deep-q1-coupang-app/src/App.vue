@@ -1,30 +1,82 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import LeftBox from './components/LeftBox.vue'
+import ProductBox from './components/ProductBox.vue'
+import TopBox from './components/TopBox.vue'
+
+export default {
+  name: "App",
+  components: {
+    LeftBox,
+    ProductBox,
+    TopBox
+  },
+  data() {
+    return {
+      transferItem_show: ''
+    };
+  },
+  methods: {
+    showItem(item) {
+      this.transferItem_show = item.count + "개를 " + item.sale_price+"원 선택함.";
+      //item.count + "개를 " + item.sale_price+"원 선택함."
+    }
+  }
+}
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="total">
+    <div>
+      <TopBox/>
+    </div>
+    <br>
+    <table>
+      <tr>
+        <td>
+          <LeftBox/>
+        </td>
+      </tr>
+      <tr>
+        <td class="alert alert-danger">
+          <div v-if="transferItem_show">
+            <button>선택한 수량/가격</button> : <span class="alert bg-danger h1 text-warning">{{transferItem_show}}</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <tr>
+        <td>
+          <ProductBox @itemClicked="showItem"/>
+        </td>
+      </tr>
+    </table>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+* {
+  font-size: 10px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+table {
+  width: 100%;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+/* 왼쪽 상세 정보 스타일링 */
+
+
+/* 오른쪽 장바구니 스타일링 */
+.right {
+  background: bisque;
+  color: white;
+  width: 100px;
+}
+
+/* clear: both;를 사용하여 부모 요소의 높이를 자식 요소에 맞춤 */
+.clear {
+  clear: both;
 }
 </style>
