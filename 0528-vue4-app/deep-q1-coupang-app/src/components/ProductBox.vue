@@ -40,6 +40,7 @@ export default {
         <td>{{ item.count_price }}</td>
         <td>{{ item.sale_price }}</td>
         <td>
+          <img src="https://cdn.pixabay.com/photo/2013/07/12/18/18/rocket-153227_1280.png" width="50" height="30">
           <button id="select" class="btn btn-info" @click="sendItem(item)">선택</button>
         </td>
       </tr>
