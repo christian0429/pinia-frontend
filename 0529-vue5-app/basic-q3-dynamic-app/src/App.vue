@@ -11,27 +11,16 @@
       </ul>
     </nav>
   </div>
-  <div>
-    <component :is="currentTab" />
+  <div class="container">
+    <keep-alive include="MidwayTab,CoralSeaTab">
+      <component :is="currentTab"></component>
+    </keep-alive>
   </div>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue'
-import pMinDelay from 'p-min-delay'
-import Loading from './components/Loading.vue';
-
-const CoralSeaTab = defineAsyncComponent({
-  loader : () => pMinDelay(import('./components/CoralSeaTab.vue'), 2000),
-  loadingComponent : Loading,
-})
-const LeyteGulfTab = defineAsyncComponent({
-  loader : () => pMinDelay(import('./components/LeyteGulfTab.vue'), 2000),
-  loadingComponent : Loading,
-})
-const MidwayTab = defineAsyncComponent({
-  loader : () => pMinDelay(import('./components/MidwayTab.vue'), 2000),
-  loadingComponent : Loading,
-})
+import CoralSeaTab from './components/CoralSeaTab.vue'
+import LeyteGulfTab from './components/LeyteGulfTab.vue'
+import MidwayTab from './components/MidwayTab.vue'
 
 export default {
   name: 'App',
