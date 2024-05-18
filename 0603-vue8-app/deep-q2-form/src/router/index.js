@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-const NotFound = () => import(/* webpackChunkName: "home" */ '@/pages/NotFound.vue');
+const NotFound = () => import(/* webpackChunkName: "home" */ '@/components/NotFound.vue');
 
 const FormPage = () => ({
     component: import(/* webpackChunkName: "form-page" */ '../components/FormPage.vue'),
