@@ -10,7 +10,7 @@
       <a v-if="member.youtube && member.youtube !== ''" 
           class="fa fa-youtube m-1" :href="member.youtube"></a>
       <br /><br />
-      <router-link :to="{ name:'members' }">멤버 목록으로</router-link>
+      <router-link to="/members">멤버 목록으로</router-link>
     </div>
 </template>
   
@@ -28,3 +28,4 @@ export default {
     }
 }
 </script>
+  

@@ -14,6 +14,7 @@ const router = createRouter({
         { path: '/members', component: Members },
         { path: '/members/:id(\\d+)', component: MemberInfo },
         { path: '/videos', component: Videos },
+        { path: '/:paths(.*)*', name: 'NotFound', component: NotFound },
     ]
 })
 
