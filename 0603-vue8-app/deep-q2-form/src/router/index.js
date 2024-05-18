@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-const NotFound = () => import(/* webpackChunkName: "home" */ '@/components/NotFound.vue');
-
 const FormPage = () => ({
     component: import(/* webpackChunkName: "form-page" */ '../components/FormPage.vue'),
     loading: require('../components/Loading.vue').default,
@@ -16,6 +14,8 @@ const ConfirmPage = () => ({
     timeout: 3000
 });
 
+const NotFound = () => import(/* webpackChunkName: "not-found" */ '../components/NotFound.vue');
+
 const routes = [
     {
         path: '/',
@@ -25,9 +25,14 @@ const routes = [
     {
         path: '/confirm',
         name: 'ConfirmPage',
-        component: ConfirmPage
+        component: ConfirmPage,
+        props: route => ({ formData: route.query })
     },
-    { path: '/:paths(.*)*', name: 'NotFound', component: NotFound },
+    {
+        path: '/:catchAll(.*)',
+        name: 'NotFound',
+        component: NotFound
+    }
 ];
 
 const router = createRouter({

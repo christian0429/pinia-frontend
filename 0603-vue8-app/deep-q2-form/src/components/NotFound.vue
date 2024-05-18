@@ -1,15 +1,13 @@
 <template>
-    <div class="card card-body">
-        <h2>404 Not Found</h2>
-        <p>존재하지 않는 요청 경로 : {{$route.fullPath}}</p>
-    </div>
+  <div class="container text-center mt-5">
+    <h1 class="text-danger">404</h1>
+    <p class="text-muted">Page Not Found</p>
+    <router-link to="/" class="btn btn-primary">Go to Home</router-link>
+  </div>
 </template>
 
 <script>
 export default {
-    name:"NotFound",
-    created() {
-        console.log(this.$route.params)
-    }
-}
+  name: 'NotFound'
+};
 </script>

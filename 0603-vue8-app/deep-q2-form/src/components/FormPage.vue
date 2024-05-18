@@ -4,15 +4,15 @@
     <form @submit.prevent="submitForm">
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input v-model="name" type="text" class="form-control" id="name" placeholder="Enter your name" required />
+        <input v-model="formData.name" type="text" class="form-control" id="name" placeholder="Enter your name" required />
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input v-model="email" type="email" class="form-control" id="email" placeholder="Enter your email" required />
+        <input v-model="formData.email" type="email" class="form-control" id="email" placeholder="Enter your email" required />
       </div>
       <div class="mb-3">
         <label for="phone" class="form-label">Phone Number</label>
-        <input v-model="phone" type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required />
+        <input v-model="formData.phone" type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required />
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -24,23 +24,25 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
 export default {
+  name: 'FormPage',
+  data() {
+    return {
+      formData: {
+        name: '',
+        email: '',
+        phone: ''
+      }
+    };
+  },
   setup() {
-    const name = ref('');
-    const email = ref('');
-    const phone = ref('');
     const router = useRouter();
 
     const submitForm = () => {
-      localStorage.setItem('name', name.value);
-      localStorage.setItem('email', email.value);
-      localStorage.setItem('phone', phone.value);
-      router.push({ name: 'ConfirmPage' });
+      router.push({ name: 'ConfirmPage', query: { ...formData } });
     };
 
     return {
-      name,
-      email,
-      phone,
+      formData,
       submitForm
     };
   }
