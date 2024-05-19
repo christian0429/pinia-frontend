@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import App from './App1.vue'
-//import App from './App2.vue'
+//import App from './AsyncBox.vue'
 
 const pinia = createPinia()
 

@@ -7,6 +7,7 @@
 <script setup>
 import axios from "axios";
 
+//post upload
 const requestAPI = async () => {
   const url = "/api/todolist_long/gdhong";
   let data = { todo: "윗몸일으키기 3세트", desc: "너무 빠르지 않게..." };
