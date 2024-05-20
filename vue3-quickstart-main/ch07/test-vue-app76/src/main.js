@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 //import App from './AxiosBox.vue'
-//import App from './AsyncBox.vue'
+//import App from './Board_create.vue'
 //import App from './App.vue'
 //import App from './PostBox.vue'
 import App from './App5.vue'

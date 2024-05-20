@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-//import App from './AsyncBox.vue'
+//import App from './Board_create.vue'
 
 import './assets/main.css'
 
