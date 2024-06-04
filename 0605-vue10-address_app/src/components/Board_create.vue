@@ -50,7 +50,7 @@ export default {
         gender: this.gender
       };
       console.log(post_data)
-      const createMemo = (post_data) => axios.post('http://localhost:3000/youth', post_data);
+      const createMemo = (post_data) => axios.post('/api/youth', post_data);
       // 실제 API 호출 없이 목록에 추가
       createMemo(post_data);
       this.$router.push('/');

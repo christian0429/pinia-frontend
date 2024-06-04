@@ -18,7 +18,7 @@
         <td>{{memo.first_name}}</td>
         <td>{{memo.last_name}}</td>
         <td>
-          <router-link :to="{ name: 'read_one', params: { id: memo.id } }">{{memo.email}}</router-link>
+          {{memo.email}}
         </td>
         <td>{{memo.gender}}</td>
       </tr>
@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     fetchPosts() {
-      axios.get('http://localhost:3000/youth?_sort=id')
+      axios.get('/api/youth')
           .then(response => {
             this.posts = response.data.map(user => ({
               id: user.id,
