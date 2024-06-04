@@ -11,6 +11,9 @@ const router = createRouter({
     routes : [
         { path: '/create', name:'create', component: Board_create },
         { path: '/', name:'read_list', component: Board_read_list },
+        { path: '/read_one/:id', name:'read_one', component: Board_read_one },
+        { path: '/update/:id', name:'update', component: Board_update },
+        { path: '/:paths(.*)*', name: 'NotFound', component: NotFound },
     ]
 })
 
