@@ -7,7 +7,7 @@ import { onMounted } from 'vue';
 
 onMounted(() => {
   const script = document.createElement('script');
-  script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=5675f8f4dffbfd2b726b7b6393fd2b78`;
+  script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=5675f8f4dffbfd2b726b7b6393fd78`;
   script.onload = () => {
     kakao.maps.load(() => {
       const mapContainer = document.getElementById('map');
